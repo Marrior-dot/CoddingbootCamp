@@ -1,0 +1,248 @@
+
+*{
+  margin: 3px;
+  padding: 0;
+  border-sizing: border-box;
+  
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width :600px){
+  <!-- For tablets -->
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+select:focus{
+ outline: none;
+  box-shadow: 0px 0px 1px 1px #27CDFA;
+}
+
+body {
+ background-image: url("https://2.bp.blogspot.com/-pmRgLHJn3Kk/UiicinABzOI/AAAAAAAAD6Q/P_OHX-bBbKE/s1600/A20.jpg");
+  z-index: 4; 
+  color: white; 
+}
+.imagediv{
+  backdrop-filter: blur(2px);
+}
+.backdiv{
+  background-color:rgba(66,99,167,0.70);
+  z-index:3;
+  margin: -10px -10px -10px -10px;
+  
+}
+
+article{
+  z-index:2;
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.articleback{
+  background-color: #2E4573;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 80%;
+  border-radius: 5px;
+  box-shadow: 5px 0px 10px 15px rgba(0, 0, 0, 0.15);
+  width: 60%;
+  height: 80%;
+  
+}
+#title{
+  font-family: Big Shoulders Stencil Text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 20px;
+  
+}
+
+#description{
+  font-family: Raleway;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 19px;
+  margin-bottom: 20px;
+  font-style: italic;
+  
+}
+
+#survey-form{
+  font-family: Raleway;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  
+}
+
+#name{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 40vw;
+    font-family: Raleway;
+    
+  
+}
+
+#email{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 40vw;
+    font-family: Raleway;
+}
+
+#number{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 40vw;
+    font-family: Raleway;
+  
+}
+
+#comment{
+  padding-bottom: 60px;
+  margin: 0px 4px 1px ;
+  border-radius: 5px;
+  border-stype: solid;
+  border-width: 1px;
+  margin-right: 50px;
+  margin-bottom: 5%;
+}
+
+
+#dropdown{
+  border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 40vw;
+    font-family: Raleway;
+}
+
+#dropdown_2{
+  border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 40vw;
+    font-family: Raleway;
+}
+
+#submit{
+  font-weight: 500;
+  font-family: Raleway;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  justify-content: center;
+  overflow: center;
+  margin-right: 5%;
+  
+ 
+}
+
+input:focus{
+  outline: none;
+  box-shadow: 0px 0px 1px 1px #27CDFA;
+  
+}
+
+.checks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+    
+}
+
+
+.access{
+  font-family: Raleway;
+  position: absolute;
+  display: block;
+  margin-left: -1000px;
+  background-color: rgba(0,0,0, 0.20);
+  padding: 5px;
+  overflow: hidden;
+  
+  
+}
+
+footer{
+  font-family: Big Shoulders Stencil Text;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+  
+}
+
+.contacts{
+  font-family: Big Shoulders Stencil Text ;
+  text-align:center;
+  flex-direction: row;
+}
+
+#inst{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+#wpp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+
+
+ 

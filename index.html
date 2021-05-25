@@ -1,0 +1,122 @@
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;300;400;500;600&display=swap" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+
+<script src="https://kit.fontawesome.com/68c6bccf2e.js" crossorigin="anonymous"></script>
+
+<head>
+  <title><i class="fas fa-angle-down"></i>Slackline Boot-camp</title>
+  <meta charset="UTF8">
+
+</head>
+
+<body>
+
+  <div class="backdiv imagediv">
+    <header>
+      <h1 tabindex="0" id="title">International Slackline boot camp survey-form</h1>
+      <p tabindex="0" id="description"> For those who enjoy walking on the line and socializing</p>
+      <nav class = "access"><strong>Acessibility:</strong>
+        <div>Name-label: "alt+1",</div>
+        <div>Email-label: "alt+2"</div>
+        <div>Age-Label:"alt+3",</div>
+        <div>Level-label:"alt+4"</div>
+        <div>Recommending-label:"alt+r"</div> 
+        <div>Improve-label:"alt+w"</div>
+        <div>Improve2-label:"alt+q"
+        <div>Commenting-label: "alt+a"</div>
+      </nav>
+    </header>
+
+    <main>
+
+      <article class="articleback">
+        <form for="submit" id="survey-form" action="">
+          <label tabindex="0" id="name-label"><strong>Name</strong>
+            <br>
+            <input accesskey="1" required id="name" type= "text"  placeholder = "Enter your name" pattern= "[A-Za-zÀ-ú ']{4,}" title = "São aceitas apenas letras maiúsculas e minúsculas">
+          </label>
+          <br>
+          <label tabindex="0" for="email" id="email-label"><strong>Email</strong>
+            <br>
+            <input accesskey="2" required id= "email" pattern="[^ @]*@[^ @]*" type= "email" placeholder="Enter your Email" >
+          </label>
+          <br>
+          <label tabindex="0" for="number" id="number-label"><strong>Age <small>(Not Required)</small></strong>
+            <br>
+            <input accesskey="3" id="number" style="font-family: Raleway" type="number" min="14" max="75" placeholder="Enter your age">
+          </label>
+          <br>
+          <label tabindex="0" for="dropdown"><strong>Level</strong>
+            <br>
+            <select accesskey = "4" tabindex="0" required id="dropdown">
+              <option value="Static">Static</option>
+              <option value="Trickliner">Trickliner</option>
+              <option value="Rodeoliner"> Rodeoliner </option>
+              <option value="A bit of all Liner">A bit of all Liner</option>
+            </select>
+          </label>
+          <br>
+          <label accesskey = "r"><strong>Would recommend Slackline-Boot-Camp to a friend? </strong>
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="recommend" name="yes" type="radio"> Definitely Yes!
+            <br>
+            <input  style="margin: 5px 0px 5px 0px" value="recommend" name="kindof" type="radio"> Not so sure
+            <br>
+            <input tabindex = "0" style="margin: 5px 0px 5px 0px" value= "recommend" name="no" type="radio"> Definitely Not...
+          </label>
+          <br>
+          <label><strong>What skills did you improve more in the boot-camp?</strong>
+            <select accesskey="w" required id="dropdown_2">
+              <option value="social">Social skills</option>
+              <option value="Line">Line skills</option>
+              <option value="balance">Balance skills</option>
+              <option value="bitofall">A-bit-of-all skills</option>
+
+            </select>
+          </label>
+          <br>
+          <label accesskey ="q"><strong>What would like to improve more? (You can Check more than one)</strong>
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Static skills
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Tricking skills
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Balance
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Longline Skills
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Rodeoline Skills
+            <br>
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Fear of Highlines
+            <br>
+
+          </label>
+          <br>
+          <label><strong>Any comments or suggestion?</strong>
+          </label>
+          <br>
+          <input accesskey="a" id="comment" style="font-family: Raleway" type="textarea" placeholder="Type your suggestions here..." 
+          <br>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </article>
+    </main>
+    <footer tabindex = "0" >&copy;<time datetime="">6<sup>th</sup> of january, 2021</time>, this website was created by Mário Roberto, Brazilian aspiring web developer
+
+    </footer>
+    <nav class="contacts">Developer´s Contacts:
+      <br>
+      <hr>
+      <section>
+        <div id="inst">
+          <div> <i class="fab fa-instagram"></i></div><a style="color: white ; text-decoration: none" href="https://www.instagram.com/mari0_2000/" target="_blank">Instagram</a>
+        </div>
+
+        <div id="wpp">
+          <div> <i class="fab fa-whatsapp"></i> </div><a style="color:  white ; text-decoration: none" href="https://api.whatsapp.com/send?phone=5591988685722&text=I%20wanna%20build%20my%20website%20too!" target="_blank">Whatsapp</a>
+        </div>
+      </section>
+    </nav>
+  </div>
+</body>
