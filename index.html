@@ -10,39 +10,25 @@
 	<title>Slackline Boot-camp</title>
   		<meta charset="UTF8">
   		<link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-	<!-- <div class="backdiv imagediv"> -->
     <header>
-      <h1 tabindex="0" id="title">International Slackline boot camp survey-form</h1>
-      <p tabindex="0" id="description"> For those who enjoy walking on the line and socializing</p>
-      <nav class = "access"><strong>Acessibility:</strong>
-        <div>Name-label: "alt+1",</div>
-        <div>Email-label: "alt+2"</div>
-        <div>Age-Label:"alt+3",</div>
-        <div>Level-label:"alt+4"</div>
-        <div>Recommending-label:"alt+r"</div> 
-        <div>Improve-label:"alt+w"</div>
-        <div>Improve2-label:"alt+q"
-        <div>Commenting-label: "alt+a"</div>
-      </nav>
-    </header>
+      <h1 tabindex="0" id="title">International Coding boot camp survey-form</h1>
+      <p tabindex="0" id="description"> For those who want to have fun while working with code</p>
+       </header>
 
     <main>
 
       <article class="articleback">
-        <form for="submit" id="survey-form" action="">
+        <form for="submit" id="survey-form" action="" onsubmit = "FormValidation()">
           <label tabindex="0" id="name-label"><strong>Name</strong>
             <br>
-            <input accesskey="1" required id="name" type= "text"  placeholder = "Enter your name" pattern= "[A-Za-zÀ-ú ']{4,}" title = "São aceitas apenas letras maiúsculas e minúsculas">
+	    <input accesskey="1" required id="name" type= "text"  placeholder = "Enter your name" title = "São permitidas apenas letras maiúsculas e minúsculas">
           </label>
           <br>
           <label tabindex="0" for="email" id="email-label"><strong>Email</strong>
             <br>
-            <input accesskey="2" required id= "email" pattern="[^ @]*@[^ @]*" type= "email" placeholder="Enter your Email" >
+            <input accesskey="2"  id= "email" pattern="[^ @]*@[^ @]*" type= "email" placeholder="Enter your Email" >
           </label>
           <br>
           <label tabindex="0" for="number" id="number-label"><strong>Age <small>(Not Required)</small></strong>
@@ -50,17 +36,16 @@
             <input accesskey="3" id="number" style="font-family: Raleway" type="number" min="14" max="75" placeholder="Enter your age">
           </label>
           <br>
-          <label tabindex="0" for="dropdown"><strong>Level</strong>
+          <label tabindex="0" for="dropdown"><strong>Role</strong>
             <br>
-            <select accesskey = "4" tabindex="0" required id="dropdown">
-              <option value="Static">Static</option>
-              <option value="Trickliner">Trickliner</option>
-              <option value="Rodeoliner"> Rodeoliner </option>
-              <option value="A bit of all Liner">A bit of all Liner</option>
+            <select accesskey = "4" tabindex="0"  id="dropdown">
+              <option value="FrontendDev">Front-End Developer</option>
+              <option value="BackendDev">Back-End Developer</option>
+              <option value="FullstackDev">FullStack Developer</option>
             </select>
           </label>
           <br>
-          <label accesskey = "r"><strong>Would recommend Slackline-Boot-Camp to a friend? </strong>
+          <label accesskey = "r"><strong>Would recommend CodingBootCamp to a friend? </strong>
             <br>
             <input style="margin: 5px 0px 5px 0px" value="recommend" name="yes" type="radio"> Definitely Yes!
             <br>
@@ -70,28 +55,27 @@
           </label>
           <br>
           <label><strong>What skills did you improve more in the boot-camp?</strong>
-            <select accesskey="w" required id="dropdown_2">
-              <option value="social">Social skills</option>
-              <option value="Line">Line skills</option>
-              <option value="balance">Balance skills</option>
-              <option value="bitofall">A-bit-of-all skills</option>
+            <select accesskey="w"  id="dropdown_2">
+              <option value="TW">Team work skills</option>
+              <option value="UXI">UI/UX design skills</option>
+              <option value="softskills">Soft skills</option>
+              <option value="Frontend">Front-end Skills</option>
+	      <option value="Fullstack">FullStack Skills</option>
 
             </select>
           </label>
           <br>
           <label accesskey ="q"><strong>What would like to improve more? (You can Check more than one)</strong>
             <br>
-            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Static skills
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Server-side Skills
             <br>
-            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Tricking skills
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Client-side Skills
             <br>
-            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Balance
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Soft Skills 
             <br>
-            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Longline Skills
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Hard Skills
             <br>
-            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Rodeoline Skills
-            <br>
-            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">Fear of Highlines
+            <input style="margin: 5px 0px 5px 0px" value="attr" type="checkbox">DevOps Skills
             <br>
 
           </label>
@@ -99,9 +83,9 @@
           <label><strong>Any comments or suggestion?</strong>
           </label>
           <br>
-          <input accesskey="a" id="comment" style="font-family: Raleway" type="textarea" placeholder="Type your suggestions here..." 
+	  <input accesskey="a" id="comment" style="font-family: Raleway" type="textarea" placeholder="Type your suggestions here..."> 
           <br>
-          <button type="submit" id="submit">Submit</button>
+          <input type="submit" id="submit" value = "Submit">
         </form>
       </article>
     </main>
