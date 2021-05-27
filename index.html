@@ -20,20 +20,23 @@
     <main>
 
       <article class="articleback">
-        <form for="submit" id="survey-form" action="" onsubmit = "FormValidation()">
+        <form for = "submit" id="survey-form" action="" onsubmit = "return FormValidation()">
           <label tabindex="0" id="name-label"><strong>Name</strong>
             <br>
-	    <input accesskey="1" required id="name" type= "text"  placeholder = "Enter your name" title = "São permitidas apenas letras maiúsculas e minúsculas">
+	    <input accesskey="1" required id="name" type= "text"  placeholder = "Enter your name" title ='São permitidas apenas letras minúsculas e maiúsculas' >
+		<p id="nameTitle"></p>
           </label>
           <br>
           <label tabindex="0" for="email" id="email-label"><strong>Email</strong>
             <br>
-            <input accesskey="2"  id= "email" pattern="[^ @]*@[^ @]*" type= "email" placeholder="Enter your Email" >
+            <input accesskey="2" id= "email" required type= "text" placeholder="Enter your Email" title = 'Email inválido'>
+	    <p id="emailTitle"></p>
           </label>
           <br>
           <label tabindex="0" for="number" id="number-label"><strong>Age <small>(Not Required)</small></strong>
             <br>
             <input accesskey="3" id="number" style="font-family: Raleway" type="number" min="14" max="75" placeholder="Enter your age">
+	    <p id="ageLabel"></p>
           </label>
           <br>
           <label tabindex="0" for="dropdown"><strong>Role</strong>
