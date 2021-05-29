@@ -1,36 +1,18 @@
-//let em = document.getElementById('email');
-/*let emValid = /@outlook|gmail|hotmail|yahoo|uol.com$|.com.br$/; 
-
-function test(validation){
-	if (validation == true){
-		return true
-	}
-	else{
-		return false
-	}
-}
-console.log(emValid.test("username@outlook.com"));
-console.log(emValid.test("username@gmail.com"));
-console.log(emValid.test("username@hotmail.com"));
-console.log(emValid.test("username@uol.com"));
-console.log(emValid.test("username@gmail.com.br"));
-*/
-function FormValidation(){
-	let nameLabel = document.getElementById('name').value;
+	let nameLabel = document.getElementById('name');
+	let nameT = document.getElementById('nameTitle');
 	let emailLabel = document.getElementById('email'); 
-	let nameValid = /[a-z]\D/ig;
-	let emailValid = /^[a-zA-Z]\d+@[a-zA-Z]+\.[a-z]?+\D/
-		if (nameValid.test(nameLabel) === false){
-		let nameT = document.getElementById('nameTitle');
-		nameT.style.color = '#FF665A'
-		nameT.innerText = nameLabel.title;
-			return false
+
+function FormValidation(){
+	let errorM = [];
+		if (/[^0-9][a-z]/ig.test(nameLabel.value) === false){
+			errorM[0] = (nameLabel.title)	
+			nameT.style.color = '#FA5C6C' 
+			nameT.innerText = errorM[0];			
+			return false;
 		}
+		/*if(/^[0-9a-z]@[a-z]\.[a-z]/ig.test(emailLabel.value) === false){
+			
+		}	
+		*/
 		
-		if (emailValid.test(emailLabel.value) === false){
-		let emailT = document.getElementById('emailTitle');
-		emailT.style.color = '#FF665A';
-		emailT.innerText = emailLabel.title;
-			return false
-		}
 }
