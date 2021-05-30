@@ -2,22 +2,57 @@
 	let nameT = document.getElementById('nameTitle');
 	let emailLabel = document.getElementById('email'); 
 	let emailT= document.getElementById('emailTitle');
-function FormValidation(){
+	let form = document.getElementById('survey-form');
+/*function FormValidation(){
 	let errorM = [];
-	if (/[^0-9][a-z]/ig.test(nameLabel.value) === false){
-			errorM[0] = nameLabel.title	
-			nameT.style.color = '#FA5C6C' 
+	if (/[^0-9][a-z]/ig.test(nameLabel.value) == false){
+			errorM[0] = nameLabel.title;	
+			nameT.style.color = '#FA5C6C'; 
 			nameT.innerText = errorM[0];			
-			
 		}
-	if (/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+\.([a-z]+)\.([a-z])?$/.test(emailLabel.value) === false){
-		return false
+	else{
+		errorM = [];
+	}
+	if (/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+\.([a-z]+)\.([a-z])?$/.test(emailLabel.value) == false){
+			errorM[1] =emailLabel.title;
+			emailT.style.color = '#FA5C6C';
+			emailT.innerText = error[1]; 
+	}	
+	else{
+		errorM = [];
 	}
 		
 	console.log(errorM);	
 	if (errorM.length > 0){
 		return false;
 	}
-
+	return true	
 		}
+*/
 
+form.addEventListener("submit", function(stop){
+	var errorM = [];
+	if (/[^0-9][a-z][^0-9]/ig.test(nameLabel.value) == false){
+			errorM[0] = nameLabel.title;	
+			nameT.style.color = '#FA5C6C'; 
+			nameT.innerText = errorM[0];			
+		}
+	else{
+			errorM.splice(0,0);	
+			nameT.innerText ='';
+	}
+	if (/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+).([a-z])?$/.test(emailLabel.value) == false){
+			errorM[1] =emailLabel.title;
+			emailT.style.color = '#FA5C6C';
+			emailT.innerText = errorM[1]; 
+	}	
+	else{
+			errorM.splice(1,1)	
+			emailT.innerText = '';
+	}
+		
+	console.log(errorM);	
+	if (errorM.length > 0){
+	stop.preventDefault();
+	}
+})
