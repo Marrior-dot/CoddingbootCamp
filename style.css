@@ -27,27 +27,21 @@
 }
 
 select:focus{
- outline: none;
-  box-shadow: 0px 0px 1px 1px #27CDFA;
+ 	outline: none;
+ 	box-shadow: 0px 0px 1px 1px #27CDFA;
 }
 
 body {
- background-image: url("https://2.bp.blogspot.com/-pmRgLHJn3Kk/UiicinABzOI/AAAAAAAAD6Q/P_OHX-bBbKE/s1600/A20.jpg");
-  color: white; 
-  /*filter: blur(3px);*/
+	background-image: url("https://cdn.hipwallpaper.com/i/32/81/CNqyJx.png");
+  	color: white; 
 }
-/*.imagediv{
-}
-*/
+
+
 .backdiv{
-  background-color:rgba(66,99,167,0.70);
   margin: -10px -10px -10px -10px;
-  filter: blur(2px);
-  
 }
 
 article{
-  z-index:2;
   display: flex;
   justify-content: center;
   width: 60vw;
@@ -61,10 +55,9 @@ article{
 }
 
 .articleback{
-  background-color: #2E4573;
+  background-color: #145955;
   padding-top: 20px;
   padding-bottom: 20px;
-  opacity: 80%;
   border-radius: 5px;
   box-shadow: 5px 0px 10px 15px rgba(0, 0, 0, 0.15);
   width: 60%;
@@ -112,8 +105,6 @@ article{
     height: 5vh;
     width: 40vw;
     font-family: Raleway;
-    
-  
 }
 
 #email{
@@ -143,7 +134,7 @@ article{
   padding-bottom: 60px;
   margin: 0px 4px 1px ;
   border-radius: 5px;
-  border-stype: solid;
+  border-style: solid;
   border-width: 1px;
   margin-right: 50px;
   margin-bottom: 5%;
@@ -189,18 +180,13 @@ article{
 input:focus{
   outline: none;
   box-shadow: 0px 0px 1px 1px #27CDFA;
-  
 }
 
 .checks{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
-    
 }
-
-
 .access{
   font-family: Raleway;
   position: absolute;
@@ -209,8 +195,6 @@ input:focus{
   background-color: rgba(0,0,0, 0.20);
   padding: 5px;
   overflow: hidden;
-  
-  
 }
 
 footer{
@@ -232,17 +216,10 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
-
 #wpp{
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-decoration: none;
-}
-
-
-
-
- 
+};
